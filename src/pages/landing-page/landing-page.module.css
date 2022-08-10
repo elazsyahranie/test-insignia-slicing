@@ -1,0 +1,41 @@
+body {
+  background-color: #953e46;
+}
+
+.whiteText {
+  color: #fff;
+}
+
+.upperMenuWhiteBorder {
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  border-color: #fff;
+}
+
+.menuThumbs {
+  height: 400px;
+}
+
+.squareContainer {
+  height: 320px;
+}
+
+.squareCard {
+  /* width: 370px; */
+  height: 330px;
+  margin-bottom: 7px;
+  background-color: #f4e3cf;
+  position: relative;
+}
+
+.squareCardSmall {
+  /* width: 178px; */
+  height: 162px;
+  margin-bottom: 7px;
+  background-color: #f4e3cf;
+}
+
+.thumbnailDesc {
+  position: absolute;
+  bottom: 0;
+}
