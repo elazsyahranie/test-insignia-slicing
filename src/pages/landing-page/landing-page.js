@@ -1,5 +1,9 @@
-import { Container, Row, Form, Col, Button, Card } from "react-bootstrap";
+import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import style from "./landing-page.module.css";
+
+import People from "../../components/people/people";
+import Videos from "../../components/videos/videos";
+import Documents from "../../components/documents/documents";
 
 function LandingPage() {
   return (
@@ -65,92 +69,16 @@ function LandingPage() {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="mt-4">
-        <Container>
-          <Row>
-            <Col lg={6}>
-              <Row>
-                <Col md={6}>
-                  <h4>Videos</h4>
-                </Col>
-                <Col md={6}>
-                  <small>Browse all videos</small>
-                </Col>
-              </Row>
-              <Row className="g-2">
-                <Col sm={8}>
-                  <Card className={style.squareCard}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                  <Row className="g-2">
-                    <Col sm={6}>
-                      <Card className={style.squareCardSmall}>
-                        <Card.Body></Card.Body>
-                      </Card>
-                    </Col>
-                    <Col sm={6}>
-                      <Card className={style.squareCardSmall}>
-                        <Card.Body></Card.Body>
-                      </Card>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col sm={4}>
-                  <Card className={style.squareCardSmall}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                  <Card className={style.squareCardSmall}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                  <Card className={style.squareCardSmall}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                </Col>
-              </Row>
-              {/* <Row className="g-2">
-                <Col md={3}>
-                  <Card className={style.squareCardSmall}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                </Col>
-                <Col md={3}>
-                  <Card className={style.squareCardSmall}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                </Col>
-                <Col md={3}>
-                  <Card className={style.squareCardSmall}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                </Col>
-              </Row> */}
-
-              {/* <Row className={`g-2`}>
-                <Col md={7}>
-                  <Card className={style.squareCard}></Card>
-                  <Row>
-                    <Col md={3}>
-                      <Card className={style.squareCardSmall}>
-                        <Card.Body></Card.Body>
-                      </Card>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col md={3}>
-                  <Card className={style.squareCardSmall}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                  <Card className={style.squareCardSmall}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                  <Card className={style.squareCardSmall}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                </Col>
-              </Row> */}
-            </Col>
-          </Row>
-        </Container>
+      <Container fluid>
+        <div className="mt-4">
+          <Videos />
+        </div>
+        <div className="mt-4">
+          <People className="mt-4" />
+        </div>
+        <div className="mt-4">
+          <Documents className="mt-4" />
+        </div>
       </Container>
     </>
   );
