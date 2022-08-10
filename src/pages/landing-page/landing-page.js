@@ -79,26 +79,29 @@ function LandingPage() {
               </Row>
               <Row className="g-2">
                 <Col sm={8}>
-                  <Card className={style.squareCardSmall}>
+                  <Card className={style.squareCard}>
                     <Card.Body></Card.Body>
                   </Card>
+                  <Row className="g-2">
+                    <Col sm={6}>
+                      <Card className={style.squareCardSmall}>
+                        <Card.Body></Card.Body>
+                      </Card>
+                    </Col>
+                    <Col sm={6}>
+                      <Card className={style.squareCardSmall}>
+                        <Card.Body></Card.Body>
+                      </Card>
+                    </Col>
+                  </Row>
                 </Col>
                 <Col sm={4}>
                   <Card className={style.squareCardSmall}>
                     <Card.Body></Card.Body>
                   </Card>
-                </Col>
-                <Col sm={4}>
                   <Card className={style.squareCardSmall}>
                     <Card.Body></Card.Body>
                   </Card>
-                </Col>
-                <Col sm={4}>
-                  <Card className={style.squareCardSmall}>
-                    <Card.Body></Card.Body>
-                  </Card>
-                </Col>
-                <Col sm={4}>
                   <Card className={style.squareCardSmall}>
                     <Card.Body></Card.Body>
                   </Card>
