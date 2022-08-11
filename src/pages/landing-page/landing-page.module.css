@@ -2,8 +2,56 @@ body {
   background-color: #953e46;
 }
 
+.redText {
+  color: #953e46;
+}
+
 .whiteText {
   color: #fff;
+}
+
+.upperMostMenuContainer {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.noBorderRadius {
+  border-radius: 0px !;
+}
+
+.noPaddingParagraph {
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+.smallerInnerSpace {
+  line-height: 19px;
+}
+
+.upperUserIconContainer {
+  margin-right: 10px;
+}
+
+.whiteText {
+  color: #fff;
+}
+
+.upperUserIcon {
+  background-color: #fff;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.upperMostText {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.upperUploadButton {
+  width: 100%;
+  border-radius: 0px;
 }
 
 .upperMenuWhiteBorder {
@@ -53,4 +101,19 @@ body {
 
 .footer {
   padding-top: 10px;
+}
+
+.fontAwesomeCustomIcon {
+  color: #fff;
+  height: 36px;
+  width: 36px;
+}
+
+.footerParagraph {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footerCopyright {
+  margin-bottom: 30px;
 }

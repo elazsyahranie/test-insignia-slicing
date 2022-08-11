@@ -6,45 +6,21 @@ function UpperMenu() {
     <>
       <Container>
         <Row className={style.upperMenuWhiteBorder}>
-          <Col>
-            <h5>Videos</h5>
-          </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>People</h5>
-          </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>Documents</h5>
-          </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>Events</h5>
-          </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>Communities</h5>
-          </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>Favorites</h5>
-          </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>Channels</h5>
-          </Col>
+          <p className={style.upperMenuParagraph}>
+            <span className="me-3">Videos</span>
+            <span className="me-3">/</span>
+            <span className="me-3">People</span>
+            <span className="me-3">/</span>
+            <span className="me-3">Documents</span>
+            <span className="me-3">/</span>
+            <span className="me-3">Events</span>
+            <span className="me-3">/</span>
+            <span className="me-3">Communities</span>
+            <span className="me-3">/</span>
+            <span className="me-3">Favorites</span>
+            <span className="me-3">/</span>
+            <span className="me-3">Channels</span>
+          </p>
         </Row>
       </Container>
     </>
