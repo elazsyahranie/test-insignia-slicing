@@ -1,0 +1,16 @@
+.channelMenuWhiteBorder {
+  border-style: solid;
+  border-width: 0px 0px 3px 0px;
+  border-color: #fff;
+}
+
+.noSpacing {
+  padding-bottom: 0;
+}
+
+.squareCardSmall {
+  /* width: 178px; */
+  height: 69px;
+  margin-bottom: 2px;
+  background-color: #f4e3cf;
+}

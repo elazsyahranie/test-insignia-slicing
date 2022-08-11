@@ -1,0 +1,14 @@
+.squareCard {
+  /* width: 370px; */
+  height: 330px;
+  margin-bottom: 7px;
+  background-color: #f4e3cf;
+  position: relative;
+}
+
+.squareCardSmall {
+  /* width: 178px; */
+  height: 120px;
+  margin-bottom: 2px;
+  background-color: #f4e3cf;
+}

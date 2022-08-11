@@ -12,6 +12,17 @@ body {
   border-color: #fff;
 }
 
+.largerMenu {
+  padding-bottom: 30px;
+}
+
+.largerMenuWhiteBorder {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #fff;
+  padding-bottom: 30px;
+}
+
 .menuThumbs {
   height: 400px;
 }
@@ -38,4 +49,8 @@ body {
 .thumbnailDesc {
   position: absolute;
   bottom: 0;
+}
+
+.footer {
+  padding-top: 10px;
 }

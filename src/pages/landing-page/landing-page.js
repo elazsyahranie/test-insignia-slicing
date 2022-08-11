@@ -1,9 +1,16 @@
 import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import style from "./landing-page.module.css";
 
+import UpperMenu from "../../components/upperMenu/upperMenu";
 import People from "../../components/people/people";
 import Videos from "../../components/videos/videos";
 import Documents from "../../components/documents/documents";
+
+import Activity from "../../components/Activity/activity";
+import Channels from "../../components/Channels/channels";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSquareFacebook } from "@fortawesome/free-solid-svg-icons";
 
 function LandingPage() {
   return (
@@ -26,59 +33,33 @@ function LandingPage() {
           </Col>
         </Row>
       </Container>
-      <Container>
-        <Row className={style.upperMenuWhiteBorder}>
-          <Col>
-            <h5>Videos</h5>
+      <UpperMenu />
+      <Container className={style.largerMenu}>
+        <Row className={`mt-4 ${style.largerMenuWhiteBorder}`}>
+          <Col lg={6}>
+            <Videos />
+            <People className="mt-4" />
+            <Documents className="mt-4" />
           </Col>
-          <Col>
-            <span>/</span>
+          <Col lg={6}>
+            <Activity />
+            <Channels />
           </Col>
-          <Col>
-            <h5>People</h5>
+          {/* </Row>
+        <Row className="mt-4">
+          <Col lg={6}>
+            <People className="mt-4" />
           </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>Documents</h5>
-          </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>Events</h5>
-          </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>Communities</h5>
-          </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>Favorites</h5>
-          </Col>
-          <Col>
-            <span>/</span>
-          </Col>
-          <Col>
-            <h5>Channels</h5>
-          </Col>
+          {/* <Col lg={6}>
+            <Channels />
+          </Col> */}
         </Row>
-      </Container>
-      <Container fluid>
-        <div className="mt-4">
-          <Videos />
-        </div>
-        <div className="mt-4">
-          <People className="mt-4" />
-        </div>
-        <div className="mt-4">
+        {/* <div className={`mt-4 pb-4`}>
           <Documents className="mt-4" />
-        </div>
+        </div> */}
+      </Container>
+      <Container className={style.footer}>
+        <FontAwesomeIcon icon="fa-brands fa-square-facebook" />
       </Container>
     </>
   );
