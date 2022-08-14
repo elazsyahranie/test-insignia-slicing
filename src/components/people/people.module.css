@@ -1,3 +1,7 @@
+.wholeBodyMargin {
+  margin-bottom: 20px;
+}
+
 body {
   background-color: #953e46;
 }
@@ -10,6 +14,18 @@ body {
   border-style: solid;
   border-width: 1px 0px 1px 0px;
   border-color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .peopleBrowseMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .peopleBrowseMenuSmaller {
+    display: none;
+  }
 }
 
 .menuThumbs {

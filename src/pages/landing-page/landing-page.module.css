@@ -2,6 +2,42 @@ body {
   background-color: #953e46;
 }
 
+.mobileMenu {
+  /* border-bottom: 1px solid #000; */
+  height: 50px;
+  align-items: center;
+}
+
+@media (min-width: 991.98px) {
+  .mobileMenuVisibility {
+    display: none;
+  }
+}
+
+/* @media (min-width: 991.98px) {
+  .mobileMenu {
+    display: none;
+  }
+} */
+
+.barsMenuIcon {
+  color: #fff;
+  height: 30px;
+  width: 28px;
+}
+
+.uploadIcon {
+  color: #fff;
+  height: 25px;
+  width: 25px;
+}
+
+.userIcon {
+  color: #fff;
+  height: 25px;
+  width: 25px;
+}
+
 .redText {
   color: #953e46;
 }
@@ -13,6 +49,12 @@ body {
 .upperMostMenuContainer {
   padding-top: 14px;
   padding-bottom: 14px;
+}
+
+@media (max-width: 991.98px) {
+  .upperMostMenuContainer {
+    display: none;
+  }
 }
 
 .noBorderRadius {

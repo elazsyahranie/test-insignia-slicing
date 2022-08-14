@@ -1,15 +1,14 @@
-.upperMenuWhiteBorder {
-  /* border-style: solid;
-  border-width: 1px 0px 1px 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-color: #fff; */
-}
-
 .upperMenuParagraph {
+  word-spacing: 30px;
   border-style: solid;
   border-width: 1px 0px 1px 0px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .upperMenuParagraph {
+    display: none;
+  }
 }

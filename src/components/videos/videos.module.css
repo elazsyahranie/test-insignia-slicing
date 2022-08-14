@@ -2,8 +2,24 @@ body {
   background-color: #953e46;
 }
 
+.wholeBodyMargin {
+  margin-bottom: 20px;
+}
+
 .whiteText {
   color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .videoBrowseMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .videoBrowseMenuSmaller {
+    display: none;
+  }
 }
 
 .upperMenuWhiteBorder {

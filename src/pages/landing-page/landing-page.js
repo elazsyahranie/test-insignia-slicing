@@ -16,10 +16,27 @@ import {
   faSquareTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
+import { faBars, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function LandingPage() {
   return (
     <>
+      <Container className={style.mobileMenuVisibility}>
+        <div className={`d-flex justify-content-between ${style.mobileMenu}`}>
+          <FontAwesomeIcon icon={faBars} className={style.barsMenuIcon} />
+          <h2 className={style.upperMostText}>
+            <span className={style.whiteText}>Social</span>
+            <span className={`fw-light ${style.whiteText}`}>Network</span>
+          </h2>
+          <div className={`d-flex justify-content-between`}>
+            <FontAwesomeIcon icon={faArrowUp} className={style.uploadIcon} />
+            <FontAwesomeIcon
+              icon={faUser}
+              className={`ms-3 ${style.userIcon}`}
+            />
+          </div>
+        </div>
+      </Container>
       <Container>
         <Row className={style.upperMostMenuContainer}>
           <Col lg={4} md={4} sm={4}>
@@ -64,27 +81,16 @@ function LandingPage() {
       <UpperMenu />
       <Container className={style.largerMenu}>
         <Row className={`mt-4 ${style.largerMenuWhiteBorder}`}>
-          <Col lg={6}>
-            <Videos />
-            <People className="mt-4" />
-            <Documents className="mt-4" />
+          <Col lg={6} md={12} sm={12}>
+            <Videos className={style.largeMenuComponent} />
+            <People className={style.largeMenuComponent} />
+            <Documents className={style.largeMenuComponent} />
           </Col>
-          <Col lg={6}>
+          <Col lg={6} md={12} sm={12}>
             <Activity />
             <Channels />
           </Col>
-          {/* </Row>
-        <Row className="mt-4">
-          <Col lg={6}>
-            <People className="mt-4" />
-          </Col>
-          {/* <Col lg={6}>
-            <Channels />
-          </Col> */}
         </Row>
-        {/* <div className={`mt-4 pb-4`}>
-          <Documents className="mt-4" />
-        </div> */}
       </Container>
       <Container className={style.footer}>
         <Row>

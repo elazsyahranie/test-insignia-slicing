@@ -6,21 +6,12 @@ function UpperMenu() {
     <>
       <Container>
         <Row className={style.upperMenuWhiteBorder}>
-          <p className={style.upperMenuParagraph}>
-            <span className="me-3">Videos</span>
-            <span className="me-3">/</span>
-            <span className="me-3">People</span>
-            <span className="me-3">/</span>
-            <span className="me-3">Documents</span>
-            <span className="me-3">/</span>
-            <span className="me-3">Events</span>
-            <span className="me-3">/</span>
-            <span className="me-3">Communities</span>
-            <span className="me-3">/</span>
-            <span className="me-3">Favorites</span>
-            <span className="me-3">/</span>
-            <span className="me-3">Channels</span>
-          </p>
+          <Col sm={12}>
+            <p className={style.upperMenuParagraph}>
+              Videos / People / Documents / Events / Communities / Favorites /
+              Channels
+            </p>
+          </Col>
         </Row>
       </Container>
     </>

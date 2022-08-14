@@ -4,14 +4,20 @@ import style from "./documents.module.css";
 function Documents() {
   return (
     <>
-      <Row>
-        <Col md={6}>
-          <h4>Document</h4>
+      <Row className={style.documentBrowseMenu}>
+        <Col lg={6} md={6}>
+          <h4>Documents</h4>
         </Col>
-        <Col md={6}>
+        <Col lg={6} md={6}>
           <small>Browse all documents</small>
         </Col>
       </Row>
+      <div className={style.documentBrowseMenuSmaller}>
+        <div className="d-flex justify-content-between">
+          <h4>Documents</h4>
+          <small>View all</small>
+        </div>
+      </div>
       <Row className="g-2">
         <Col sm={8}>
           <div className={style.squareCard}>
